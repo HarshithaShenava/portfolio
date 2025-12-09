@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ project.title }}</h2>
+<p>{{ project.desc }}</p>
+
+<h5>Features</h5>
+<ul>
+  {% for f in project.features %}
+    <li>{{ f }}</li>
+  {% endfor %}
+</ul>
+
+<h5>Screenshots</h5>
+<div class="row">
+  {% for s in project.screenshots %}
+  <div class="col-md-6">
+    <img src="{{ s }}" alt="screenshot" class="img-fluid mb-3 shadow-sm">
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
