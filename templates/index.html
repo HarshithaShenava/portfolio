@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="text-center mt-5">
-    <h1 class="fw-bold">Hi, I am <span class="text-primary">Harshitha S</span></h1>
-    <h4 class="mt-3">Python Developer | Data Analyst</h4>
-    <p class="mt-3">I build web applications using Flask, MySQL and create data-driven solutions using Python and Power BI.</p>
-
-    <a href="/projects" class="btn btn-primary mt-4">View My Projects</a>
-    <a href="/contact" class="btn btn-outline-dark mt-4">Contact Me</a>
+<div class="row align-items-center">
+  <div class="col-lg-6">
+    <h1 class="display-5">Hi, I'm <span class="text-primary">Harshitha</span></h1>
+    <p class="lead">Python Developer • Data Analyst. I build Flask-based web apps and data-driven dashboards used in enterprise workflows.</p>
+    <a class="btn btn-primary me-2" href="/projects">View Projects</a>
+    <a class="btn btn-outline-secondary" href="/contact">Contact Me</a>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="{{ url_for('static', filename='images/project_itams.png') }}" alt="screenshot" class="img-fluid animated-screenshot" style="max-width:420px;">
+  </div>
 </div>
-
 {% endblock %}
