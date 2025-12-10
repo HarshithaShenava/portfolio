@@ -10,7 +10,7 @@ app.secret_key = os.getenv("FLASK_SECRET", "change_this_secret_for_prod")
 
 
 # Resume path (static)
-RESUME_FILENAME = os.getenv("RESUME_FILENAME", "resume.pdf")
+RESUME_FILENAME = os.getenv("RESUME_FILENAME", "harshitha-s-da (2).pdf")
 
 
 @app.route("/")
