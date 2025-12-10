@@ -1,9 +1,70 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Contact Me</h2>
-<p><strong>Email:</strong> harshithas102001@gmail.com</p>
-<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/harshitha-s-37882b222" target="_blank">View Profile</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/HarshithaShenava" target="_blank">Visit Repository</a></p>
+<div class="container py-5 fade-up">
+    <h2 class="fw-bold text-center mb-4">Contact Me</h2>
+    <p class="text-center text-muted mb-5">
+        Feel free to reach out for opportunities, collaborations, or tech questions!
+    </p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <!-- Contact Card -->
+            <div class="contact-card p-4">
+                <div class="row">
+
+                    <!-- Email -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="contact-icon-box">
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                        </div>
+                        <h6 class="mt-3 fw-bold">Email</h6>
+                        <p class="text-muted small">harshithas102001@gmail.com</p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="contact-icon-box">
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                        </div>
+                        <h6 class="mt-3 fw-bold">Phone</h6>
+                        <p class="text-muted small">+91 99020 16521</p>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="contact-icon-box">
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                        </div>
+                        <h6 class="mt-3 fw-bold">Location</h6>
+                        <p class="text-muted small">Mangalore, India</p>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Social Icons -->
+                <h5 class="text-center fw-bold">Connect With Me</h5>
+
+                <div class="d-flex justify-content-center gap-4 mt-3">
+                    <a href="https://github.com/HarshithaShenava" target="_blank" class="social-icon github">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/harshitha-s-37882b222" target="_blank"
+                       class="social-icon linkedin">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:harshithas102001@gmail.com" class="social-icon email">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
