@@ -109,3 +109,54 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+/* Contact Card */
+.contact-card {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Contact Icons */
+.contact-icon-box {
+  width: 70px;
+  height: 70px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 4px 18px rgba(13, 110, 253, 0.28);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.45);
+}
+
+.contact-icon {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icon {
+  font-size: 30px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social-icon.github { background: #24292e; }
+.social-icon.linkedin { background: #0A66C2; }
+.social-icon.email { background: #d93025; }
+
+.social-icon:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
