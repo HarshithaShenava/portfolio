@@ -1,47 +1,99 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="mb-4">Projects</h2>
+<div class="container py-4 fade-up">
+    <h2 class="fw-bold text-center mb-4">Projects</h2>
 
-<div class="project">
-  <h4>PF Management System – ITI Limited</h4>
-  <p>A full workflow automation tool built for government PF operations with 70+ functional modules.
-     Includes staff onboarding, PF OB corrections, loan workflows, settlements, recoveries, and PF queries.</p>
-  <strong>Tech:</strong> Flask, MySQL, Python, HTML, CSS
+    <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card-custom">
+                <img src="{{ url_for('static', filename='images/project_pf.png') }}" class="project-img">
+                <div class="p-3">
+                    <h5 class="fw-bold">PF Management System – ITI Limited</h5>
+                    <p class="project-desc">
+                        Government PF automation system with 70+ workflows:
+                        onboarding, OB correction, loans, recoveries, settlements.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Flask</span><span>MySQL</span><span>Python</span><span>HTML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card-custom">
+                <img src="{{ url_for('static', filename='images/project_itams.png') }}" class="project-img">
+                <div class="p-3">
+                    <h5 class="fw-bold">IT Asset Management System (ITAMS)</h5>
+                    <p class="project-desc">
+                        Tracks IT assets: CPU, printers, monitors, OS, hardware specs.
+                        Includes CRUD, search filters, duplicate IP validation.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Flask</span><span>MySQL</span><span>Bootstrap</span><span>JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card-custom">
+                <img src="https://cdn-icons-png.flaticon.com/512/8576/8576553.png" class="project-img">
+                <div class="p-3">
+                    <h5 class="fw-bold">US Crude Oil Import Analysis</h5>
+                    <p class="project-desc">
+                        Data cleaning, outlier detection, dashboards & KPIs using Power BI + Python.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Pandas</span><span>Power BI</span><span>Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card-custom">
+                <img src="https://cdn-icons-png.flaticon.com/512/284/284323.png" class="project-img">
+                <div class="p-3">
+                    <h5 class="fw-bold">Smart Pregnancy Band – KSCST</h5>
+                    <p class="project-desc">
+                        Detects high-risk pregnancy conditions & sends alert notifications.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span><span>Figma</span><span>Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card-custom">
+                <img src="https://cdn-icons-png.flaticon.com/512/3208/3208750.png" class="project-img">
+                <div class="p-3">
+                    <h5 class="fw-bold">Bus Accounting System</h5>
+                    <p class="project-desc">
+                        Manages collections, bus schedules, employees, and leave applications.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>MySQL</span><span>NetBeans</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-
-<hr>
-
-<div class="project">
-  <h4>IT Asset Management System (ITAMS)</h4>
-  <p>Tracks employee IT resources like CPU, printers, monitors, OS, hardware specs and supports CRUD operations,
-     search filters, IP duplicate validation, and printer inventory.</p>
-  <strong>Tech:</strong> Flask, MySQL, HTML, CSS, JS, VSCode
-</div>
-
-<hr>
-
-<div class="project">
-  <h4>US Crude Oil Import Analysis</h4>
-  <p>Analyzed datasets after data cleaning, transformation, and outlier handling using Python. Created interactive dashboards with charts and KPIs in Power BI and Excel to visualize insights from the processed data. </p>
-  <strong>Tech:</strong> Python, VSCode, Pandas, Power BI
-</div>
-
-<hr>
-
-<div class="project">
-  <h4>Smart Pregnancy Band (KSCST Project)</h4>
-  <p>Detect risk levels and send notifications to doctors and caretakers for high-risk conditions.</p>
-  <strong>Tech:</strong>Python,VScode,Jupyter,Figma
-</div>
-
-<hr>
-
-<div class="project">
-  <h4>Bus Accounting System</h4>
-  <p>Enable accurate management of information related to collections, buses, employees, and leave applications.</p>
-  <strong>Tech:</strong>MySQL,NetBeans
-</div>
-
 
 {% endblock %}
