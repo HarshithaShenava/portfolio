@@ -1,19 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
+
 <h2 class="mb-4">Projects</h2>
-<div class="row">
-  {% for p in projects %}
-  <div class="col-md-6 mb-4">
-    <div class="card h-100 shadow-sm project-card">
-      <img src="{{ p.image }}" class="card-img-top" alt="{{ p.title }}">
-      <div class="card-body">
-        <h5 class="card-title">{{ p.title }}</h5>
-        <p class="card-text">{{ p.summary }}</p>
-        <p><strong>Tech:</strong> {{ p.tech | join(', ') }}</p>
-        <a href="{{ url_for('project_detail', project_id=p.id) }}" class="btn btn-sm btn-primary">Details</a>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
+
+<div class="project">
+  <h4>PF Management System – ITI Limited</h4>
+  <p>A full workflow automation tool built for government PF operations with 70+ functional modules.
+     Includes staff onboarding, PF OB corrections, loan workflows, settlements, recoveries, and PF queries.</p>
+  <strong>Tech:</strong> Flask, MySQL, Python, HTML, CSS
 </div>
+
+<hr>
+
+<div class="project">
+  <h4>IT Asset Management System (ITAMS)</h4>
+  <p>Tracks employee IT resources like CPU, printers, monitors, OS, hardware specs and supports CRUD operations,
+     search filters, IP duplicate validation, and printer inventory.</p>
+  <strong>Tech:</strong> Flask, MySQL, Bootstrap
+</div>
+
+<hr>
+
+<div class="project">
+  <h4>US Crude Oil Import Analysis</h4>
+  <strong>Tech:</strong> Python, Pandas, Power BI
+</div>
+
+<hr>
+
+<div class="project">
+  <h4>Smart Pregnancy Band (KSCST Project)</h4>
+</div>
+
 {% endblock %}
